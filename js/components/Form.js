@@ -15,6 +15,10 @@ const Form = () => {
         modal.alert('ARE STUPID??? CHOOSE THE PLACE!!! NIGGER!');
       } else {
         modal.onSubmit(itemsValue);
+        items.forEach(i => {
+          i.classList.add('reserved');
+          i.classList.remove('choosed');
+        });
       }
     }, 500);
   };

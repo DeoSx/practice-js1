@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/mustard.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Movie sit calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="overlay"></div>
+      <form id="form">
+        <div class="select" id="select">
+          <div class="select__title" data-name="Terminator">Terminator</div>
+          <input type="hidden">
+          <ul class="select__items"></ul>
+        </div>
+
+        <div class="place">
+          <p>Maximum only <strong>5</strong> sits</p>
+          <p>Your total sits: <span class="place--total">0</span>
+          </p>
+        </div>
+        <ul class="sits"></ul>
+        <button type="submit" class="button-primary">Submit</button>
+      </form>
+    </div>
+
+    <script src="js/index.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+body {
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+/* sits */
+
+.sits {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 720px;
+}
+.sit {
+  background: rgba(0, 0, 0, 0.5);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.sit.choosed {
+  background: forestgreen;
+}
+
+.sit.reserved {
+  background: red;
+}
+
+/* select */
+
+.select {
+  height: 60px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.select__title {
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 20px;
+  background: rgb(101, 131, 94);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.select__items {
+  display: none;
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  position: absolute;
+  height: 300%;
+  overflow-y: scroll;
+  list-style: none;
+  border-radius: 5px;
+}
+
+.select__items.active {
+  display: block;
+}
+
+.select__item {
+  background: #fff;
+  padding-left: 10px;
+  height: 50px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
+.select__item:hover {
+  background: bisque;
+}
+
+/* place */
+
+.place strong {
+  color: red;
+}
+
+.place p {
+  margin-bottom: 0;
+}
+
+.place--total {
+  color: blue;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* modals */
+
+.overlay {
+  position: fixed;
+  display: none;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.overlay.active {
+  display: block;
+}
+
+.dModal {
+  background: #fff;
+  border-radius: 5px;
+  color: #000;
+  position: absolute;
+  height: auto;
+  width: 400px;
+  z-index: 100;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
